@@ -13,7 +13,7 @@ customElements.define( 'starfield-component', class extends ThreeComponent {
             this.scene.add( this.stars[ index ] );
         }
 
-        this.animate();
+        this.draw();
 
         this.addEventListener('mousemove', this.onMouseover.bind( this ) );
         this.speed = .1;
@@ -24,13 +24,13 @@ customElements.define( 'starfield-component', class extends ThreeComponent {
         this.speed = event.clientX / 1000;
     }
 
-    animate() {
-        requestAnimationFrame( this.animate.bind( this ) );
+    draw() {
         this.stars.forEach( star =>  {
             star.update( this.speed );
             star.show();
         })
-        this.renderer.render( this.scene, this.camera );
+
+        super.draw();
     }
 
 } );

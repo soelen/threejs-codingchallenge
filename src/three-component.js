@@ -20,6 +20,12 @@ class ThreeComponent extends BaseComponent {
 
     render() { return html`${ this.getDefaultTemplate( this.renderer.domElement )}`; }
 
+    draw() {
+
+        requestAnimationFrame( this.draw.bind( this ) );
+        this.renderer.render( this.scene, this.camera );
+    }
+
 }
 
 export {
