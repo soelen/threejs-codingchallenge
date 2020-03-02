@@ -1,7 +1,7 @@
 {
   "name": "threejs-codingchallenge",
   "version": "1.0.0",
-  "description": "",
+  "description": "A collection of three.js ported coding train challenges.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -11,9 +11,13 @@
     "type": "git",
     "url": "git+https://github.com/soelen/threejs-codingchallenge.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "three",
+    "three.js",
+    "coding train"
+  ],
+  "author": "Uwe Sölen Flaig",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/soelen/threejs-codingchallenge/issues"
   },
@@ -24,8 +28,5 @@
     "three": "^0.114.0"
   },
   "devDependencies": {
-    "webpack": "^4.41.6",
-    "webpack-cli": "^3.3.11",
-    "webpack-dev-server": "^3.10.3"
   }
 }
