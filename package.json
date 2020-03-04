@@ -23,10 +23,13 @@
   },
   "homepage": "https://github.com/soelen/threejs-codingchallenge#readme",
   "dependencies": {
-    "es-dev-server": "^1.41.0",
     "lit-element": "^2.2.1",
     "three": "^0.114.0"
   },
   "devDependencies": {
+    "es-dev-server": "^1.41.0",
+    "jsdom": "^16.2.0",
+    "pretty": "^2.0.0",
+    "prompt": "^1.0.0"
   }
 }
